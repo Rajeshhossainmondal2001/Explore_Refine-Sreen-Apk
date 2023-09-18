@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Refine_Explore_Screen</string>
+    <string-array name="Availability">
+        <item>Available | Hey Let Us Connect</item>
+        <item>Away | Stay Discrete And Watch</item>
+        <item>Busy | Do Not Disturb | Will Catch Up Later</item>
+        <item>SOS | Emergency! Need Assistance! Help</item>
+    </string-array>
+</resources>

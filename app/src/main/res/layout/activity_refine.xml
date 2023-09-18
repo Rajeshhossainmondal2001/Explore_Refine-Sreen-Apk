@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    tools:context=".RefineActivity">
+
+    <TextView
+        android:id="@+id/teV2"
+        android:layout_width="354dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="24dp"
+        android:hint="Select Your Availability"
+        android:textColorHint="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textStyle="bold"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ipl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:layout_below="@+id/teV2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+        <AutoCompleteTextView
+            android:id="@+id/auto_complete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select"
+            android:inputType="none" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:id="@+id/teV3"
+        android:layout_below="@+id/ipl"
+        android:layout_width="354dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="12dp"
+        android:hint="Add Your Status"
+        android:textColorHint="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/ED"
+        android:layout_width="380dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/teV3"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/card_design"
+        android:paddingLeft="5dp"
+        android:hint="Put Your Status" />
+    <TextView
+        android:id="@+id/teV4"
+        android:layout_below="@+id/ED"
+        android:layout_width="354dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="24dp"
+        android:hint="Select Hyper local Distance"
+        android:textColorHint="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textStyle="bold" />
+
+    <SeekBar
+        android:id="@+id/sB"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/teV4"
+        android:layout_marginStart="12dp"/>
+    <TextView
+        android:id="@+id/tv"
+        android:layout_below="@+id/sB"
+        android:layout_marginStart="20dp"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="1Km"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/tev"
+        android:layout_below="@+id/sB"
+        android:layout_marginStart="300dp"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="100Km"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/teV5"
+        android:layout_width="355dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/sB"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="30dp"
+        android:hint="Select Purpose"
+        android:textColorHint="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/cp1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/teV5"
+        android:layout_marginStart="12dp"
+        android:background="@drawable/card_design"
+        android:gravity="center"
+        android:text="Coffee"
+        android:textSize="18dp"
+        android:padding="5dp"
+        android:textColor="@color/text_color"/>
+
+    <TextView
+        android:id="@+id/cp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/teV5"
+        android:layout_marginStart="90dp"
+        android:text="Business"
+        android:textSize="18dp"
+        android:background="@drawable/card_design"
+        android:padding="5dp"
+        android:textColor="@color/text_color" />
+
+    <TextView
+        android:id="@+id/cp3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/teV5"
+        android:layout_marginStart="180dp"
+        android:text="Hobbies"
+        android:textSize="18dp"
+        android:background="@drawable/card_design"
+        android:padding="5dp"
+        android:textColor="@color/text_color"/>
+
+    <TextView
+        android:id="@+id/cp4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/teV5"
+        android:layout_marginStart="270dp"
+        android:text="Dinning"
+        android:textSize="18dp"
+        android:background="@drawable/card_design"
+        android:padding="5dp"
+        android:textColor="@color/text_color" />
+
+    <TextView
+        android:id="@+id/cp5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cp1"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="10dp"
+        android:text="Friendship"
+        android:textSize="18dp"
+        android:background="@drawable/card_design"
+        android:padding="5dp"
+        android:textColor="@color/text_color"/>
+
+    <TextView
+        android:id="@+id/cp6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cp2"
+        android:layout_marginStart="115dp"
+        android:text="Movies"
+        android:textSize="18dp"
+        android:background="@drawable/card_design"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/text_color"/>
+
+    <TextView
+        android:id="@+id/cp7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cp3"
+        android:layout_marginStart="190dp"
+        android:text="Dating"
+        android:textSize="18dp"
+        android:background="@drawable/card_design"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/text_color"/>
+
+    <TextView
+        android:id="@+id/cp8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cp4"
+        android:layout_marginStart="260dp"
+        android:text="Matrimony"
+        android:textSize="18dp"
+        android:padding="5dp"
+        android:background="@drawable/card_design"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/text_color"/>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="153dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cp5"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="100dp"
+        android:text="Save &amp; Explore"
+        android:textColorHighlight="#F8F6F6" />
+
+
+
+
+</RelativeLayout>
